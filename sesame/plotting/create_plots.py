@@ -5,7 +5,7 @@ from secrets import token_bytes
 from typing import List, Optional, Tuple
 
 from blspy import AugSchemeMPL, G1Element, PrivateKey
-from sesamepos import DiskPlotter
+from chiapos import DiskPlotter
 
 from sesame.plotting.plot_tools import add_plot_directory, stream_plot_info_ph, stream_plot_info_pk
 from sesame.types.blockchain_format.proof_of_space import ProofOfSpace

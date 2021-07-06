@@ -5,7 +5,7 @@ from enum import IntEnum
 from typing import Optional
 from functools import lru_cache
 
-from sesamevdf import create_discriminant, verify_n_wesolowski
+from chiavdf import create_discriminant, verify_n_wesolowski
 
 from sesame.consensus.constants import ConsensusConstants
 from sesame.types.blockchain_format.classgroup import ClassgroupElement

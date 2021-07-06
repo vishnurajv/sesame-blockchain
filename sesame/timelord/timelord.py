@@ -7,7 +7,7 @@ import time
 import traceback
 from typing import Callable, Dict, List, Optional, Tuple, Set
 
-from sesamevdf import create_discriminant
+from chiavdf import create_discriminant
 
 from sesame.consensus.constants import ConsensusConstants
 from sesame.consensus.pot_iterations import calculate_sp_iters, is_overflow_block

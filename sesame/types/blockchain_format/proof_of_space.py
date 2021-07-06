@@ -4,7 +4,7 @@ from typing import Optional
 
 from bitstring import BitArray
 from blspy import G1Element
-from sesamepos import Verifier
+from chiapos import Verifier
 
 from sesame.consensus.constants import ConsensusConstants
 from sesame.types.blockchain_format.sized_bytes import bytes32

@@ -10,7 +10,7 @@ git status
 Write-Output "   ---"
 Write-Output "curl miniupnpc"
 Write-Output "   ---"
-Invoke-WebRequest -Uri "https://chia.net/simple/miniupnpc/miniupnpc-2.1-cp37-cp37m-win_amd64.whl" -OutFile "miniupnpc-2.1-cp37-cp37m-win_amd64.whl"
+Invoke-WebRequest -Uri "https://pypi.chia.net/simple/miniupnpc/miniupnpc-2.1-cp37-cp37m-win_amd64.whl" -OutFile "miniupnpc-2.1-cp37-cp37m-win_amd64.whl"
 Write-Output "Using win_amd64 python 3.7 wheel from https://github.com/miniupnp/miniupnp/pull/475 (2.2.0-RC1)"
 If ($LastExitCode -gt 0){
     Throw "Failed to download miniupnpc!"
@@ -47,7 +47,7 @@ Write-Output "   ---"
 Write-Output "   ---"
 Write-Output "Build sesame-blockchain wheels"
 Write-Output "   ---"
-pip wheel --use-pep517 --extra-index-url https://chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
+pip wheel --use-pep517 --extra-index-url https://pypi.chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
 
 Write-Output "   ---"
 Write-Output "Install sesame-blockchain wheels into venv with pip"
@@ -95,7 +95,7 @@ If ($LastExitCode -gt 0){
 }
 
 Write-Output "   ---"
-Write-Output "Increase the stack for sesame command for (sesame plots create) sesamepos limitations"
+Write-Output "Increase the stack for sesame command for (sesame plots create) chiapos limitations"
 # editbin.exe needs to be in the path
 editbin.exe /STACK:8000000 daemon\sesame.exe
 Write-Output "   ---"

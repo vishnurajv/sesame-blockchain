@@ -1,6 +1,6 @@
 from typing import Tuple
 
-from sesamevdf import prove
+from chiavdf import prove
 
 from sesame.consensus.constants import ConsensusConstants
 from sesame.types.blockchain_format.classgroup import ClassgroupElement
