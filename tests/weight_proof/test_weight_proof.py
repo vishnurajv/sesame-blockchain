@@ -6,22 +6,22 @@ from typing import Dict, List, Optional, Tuple
 import aiosqlite
 import pytest
 
-from chia.consensus.block_header_validation import validate_finished_header_block
-from chia.consensus.block_record import BlockRecord
-from chia.consensus.blockchain import Blockchain
-from chia.consensus.default_constants import DEFAULT_CONSTANTS
-from chia.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
-from chia.consensus.full_block_to_block_record import block_to_block_record
-from chia.full_node.block_store import BlockStore
-from chia.full_node.coin_store import CoinStore
-from chia.server.start_full_node import SERVICE_NAME
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from chia.util.block_cache import BlockCache
-from chia.util.block_tools import test_constants
-from chia.util.config import load_config
-from chia.util.default_root import DEFAULT_ROOT_PATH
-from chia.util.generator_tools import get_block_header
+from sesame.consensus.block_header_validation import validate_finished_header_block
+from sesame.consensus.block_record import BlockRecord
+from sesame.consensus.blockchain import Blockchain
+from sesame.consensus.default_constants import DEFAULT_CONSTANTS
+from sesame.consensus.difficulty_adjustment import get_next_sub_slot_iters_and_difficulty
+from sesame.consensus.full_block_to_block_record import block_to_block_record
+from sesame.full_node.block_store import BlockStore
+from sesame.full_node.coin_store import CoinStore
+from sesame.server.start_full_node import SERVICE_NAME
+from sesame.types.blockchain_format.sized_bytes import bytes32
+from sesame.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+from sesame.util.block_cache import BlockCache
+from sesame.util.block_tools import test_constants
+from sesame.util.config import load_config
+from sesame.util.default_root import DEFAULT_ROOT_PATH
+from sesame.util.generator_tools import get_block_header
 from tests.setup_nodes import bt
 
 try:
@@ -30,16 +30,16 @@ except ImportError:
     pass
 
 
-from chia.consensus.pot_iterations import calculate_iterations_quality
-from chia.full_node.weight_proof import (  # type: ignore
+from sesame.consensus.pot_iterations import calculate_iterations_quality
+from sesame.full_node.weight_proof import (  # type: ignore
     WeightProofHandler,
     _map_sub_epoch_summaries,
     _validate_sub_epoch_segments,
     _validate_summaries_weight,
 )
-from chia.types.full_block import FullBlock
-from chia.types.header_block import HeaderBlock
-from chia.util.ints import uint32, uint64
+from sesame.types.full_block import FullBlock
+from sesame.types.header_block import HeaderBlock
+from sesame.util.ints import uint32, uint64
 from tests.core.fixtures import (
     default_400_blocks,
     default_1000_blocks,

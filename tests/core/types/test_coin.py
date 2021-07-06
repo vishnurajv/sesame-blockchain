@@ -1,7 +1,7 @@
-from chia.types.blockchain_format.coin import Coin
-from chia.types.blockchain_format.sized_bytes import bytes32
-from chia.util.ints import uint64
-from chia.util.hash import std_hash
+from sesame.types.blockchain_format.coin import Coin
+from sesame.types.blockchain_format.sized_bytes import bytes32
+from sesame.util.ints import uint64
+from sesame.util.hash import std_hash
 import io
 
 

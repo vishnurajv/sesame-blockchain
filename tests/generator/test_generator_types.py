@@ -1,10 +1,10 @@
 from typing import Dict
 from unittest import TestCase
 
-from chia.types.blockchain_format.program import Program, SerializedProgram
-from chia.types.generator_types import GeneratorBlockCacheInterface
-from chia.full_node.generator import create_block_generator, create_generator_args
-from chia.util.ints import uint32
+from sesame.types.blockchain_format.program import Program, SerializedProgram
+from sesame.types.generator_types import GeneratorBlockCacheInterface
+from sesame.full_node.generator import create_block_generator, create_generator_args
+from sesame.util.ints import uint32
 
 gen0 = SerializedProgram.from_bytes(
     bytes.fromhex(
