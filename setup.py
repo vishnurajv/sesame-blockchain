@@ -45,7 +45,7 @@ kwargs = dict(
     author="Sesame Dev",
     author_email="sesamedev@sesamechain.network",
     description="Sesame blockchain full node, farmer, timelord, and wallet.",
-    url="https://sesamechain.network/",
+    url="https://www.sesamechain.network/",
     license="Apache License",
     python_requires=">=3.7, <4",
     keywords="sesame blockchain node",
