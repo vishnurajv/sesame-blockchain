@@ -75,7 +75,7 @@ def configure(
     if testnet is not None:
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
-            testnet_port = "58444"
+            testnet_port = "54444"
             testnet_introducer = "beta1_introducer.sesamechain.network"
             testnet = "testnet7"
             config["full_node"]["port"] = int(testnet_port)
@@ -100,7 +100,7 @@ def configure(
 
         elif testnet == "false" or testnet == "f":
             print("Setting Mainnet")
-            mainnet_port = "8444"
+            mainnet_port = "4444"
             mainnet_introducer = "introducer.sesamechain.network"
             net = "mainnet"
             config["full_node"]["port"] = int(mainnet_port)
