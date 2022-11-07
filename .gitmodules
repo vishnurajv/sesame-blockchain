@@ -1,7 +1,7 @@
 [submodule "sesame-blockchain-gui"]
 	path = sesame-blockchain-gui
-	url = https://github.com/Sesame-Network/sesame-blockchain-gui.git
+	url = https://github.com/vishnurajv/sesame-blockchain-gui.git
 	branch = main
 [submodule "mozilla-ca"]
 	path = mozilla-ca
-	url = https://github.com/Sesame-Network/mozilla-ca.git
+	url = https://github.com/vishnurajv/mozilla-ca.git
